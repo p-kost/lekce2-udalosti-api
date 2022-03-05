@@ -9,15 +9,20 @@
 </head>
 <body>
 
-	<h1>Změna tříd, události</h1>
+	<p onmouseover="getFat('text')" id="text" class="text">V elipse spí lev.</p>
 
-	<div class="ctverecek zluty"></div>
+	<button onclick="turnRed('text')">Červený po kliknutí</button>
+	
+	<button onclick="getBigger('#text', 1)">Větší po kliknutí</button>
 
-	<div class="ctverecek zeleny"></div>
+	<button> Přehraj </button>
+	<button> Pauzni </button>
+	<button> Ztišit </button>
+	<button> Hlasitost tak akorát </button>
+	<button> Hlasitost na maximum </button>
+	<button> Nastav na začátek </button>
 
-	<img class="obrazek" src="obrazky/kocka.jpg">
 
-	<button class="tlacitko">Čudlajs</button>
 
 	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
 
