@@ -25,3 +25,25 @@ function getBigger(textSelector, zmenaVelikosti) {
     text.style.fontSize = (soucasnaVelikost + zmenaVelikosti) + 'px';
 }
 
+function prehraj(audioSelector) {
+    document.querySelector(audioSelector).play();
+}
+
+function pauzni(audioSelector) {
+    document.querySelector(audioSelector).pause();
+}
+
+function zmenHlasitost(audioSelector, hlasitost) {
+    document.querySelector(audioSelector).volume = hlasitost;
+}
+
+function hrajOdZacatku(audioSelector) {
+    document.querySelector(audioSelector).currentTime = 0;
+}
+
+
+
+
+
+
+

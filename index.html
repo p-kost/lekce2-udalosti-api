@@ -15,14 +15,17 @@
 	
 	<button onclick="getBigger('#text', 1)">Větší po kliknutí</button>
 
-	<button> Přehraj </button>
-	<button> Pauzni </button>
-	<button> Ztišit </button>
-	<button> Hlasitost tak akorát </button>
-	<button> Hlasitost na maximum </button>
-	<button> Nastav na začátek </button>
 
+	<h1> Audio ovladač </h1>
 
+	<audio id="audio-button" src="audio/dingdingdang.mp3" preload="auto"></audio>
+
+	<button onclick="prehraj('#audio-button')"> Přehraj </button>
+	<button onclick="pauzni('#audio-button')"> Pauzni </button>
+	<button onclick="zmenHlasitost('#audio-button', 0)"> Ztišit </button>
+	<button onclick="zmenHlasitost('#audio-button', 0.5)"> Hlasitost tak akorát </button>
+	<button onclick="zmenHlasitost('#audio-button', 1)"> Hlasitost na maximum </button>
+	<button onclick="hrajOdZacatku('#audio-button')"> Nastav na začátek </button>
 
 	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
 
